@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Tester</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    #test-area {
+      width: 100%;
+      height: 150px;
+      margin: 20px 0;
+      border: 1px solid #ced4da;
+      padding: 10px;
+      font-size: 1.2em;
+    }
+    #results {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center">Typing Speed Tester</h2>
+    <p id="quote" class="text-center">
+      The quick brown fox jumps over the lazy dog.
+    </p>
+    <textarea id="test-area" class="form-control" placeholder="Start typing here..."></textarea>
+    <div id="results" class="text-center mt-3">
+      <p>Time: <span id="time">0</span> seconds</p>
+      <p>Words: <span id="words">0</span></p>
+      <p>Speed: <span id="speed">0</span> WPM</p>
+    </div>
+    <div class="text-center mt-4">
+      <button id="reset-button" class="btn btn-secondary">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
